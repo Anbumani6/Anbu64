@@ -1,0 +1,13 @@
+from collections import Counter
+for i in range(int(input())):
+    s = str(input())
+    d = Counter(s)
+    x = list(d.values())
+    x.sort()
+    if len(x)<3:
+        print('Dynamic')
+    else:
+        if x[-1]== x[-3]+x[-2]:
+            print('Dynamic')
+        else:
+            print('Not')
