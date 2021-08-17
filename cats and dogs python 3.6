@@ -1,0 +1,13 @@
+
+
+T = int(input())
+for i in range(T):
+    c,d,l = map(int, input().split())
+    
+    leg = l - d*4
+    
+    if leg>=0 and leg % 4 ==0 and leg <= c*4 and leg >= (c-2*d)*4:
+        print('yes')
+
+    else:
+        print('no') 
