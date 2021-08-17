@@ -1,0 +1,15 @@
+# cook your dish here
+
+
+try:
+    T = int(input())
+    for i in range(T):
+        A, B, times = map(int, input().split())
+        if times % 2 == 0:
+            ans = max(A, B) / min(A, B)
+            print(int(ans))
+        else:
+            ans = max(A*2, B) / min(A*2, B)
+            print(int(ans))
+except:
+    pass
