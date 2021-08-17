@@ -1,0 +1,17 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    ar=[]
+    li=list(map(int,input().split()))[:n]
+    li2=list(set(li))
+    li2.sort(reverse=True)    
+    for j in li2:
+        if li.count(j)>=2:
+            ar.append(j)
+        if li.count(j)>=4:
+            ar.append(j)
+            ar.append(j)       
+    if len(ar)>1:
+        print(ar[0]*ar[1])
+    else:
+        print(-1)
